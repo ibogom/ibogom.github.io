@@ -115,6 +115,19 @@ ul.h_menu li:before
 	height:40px;
 	margin-left:-10px;
 }
+ul.h_menu li a:after
+{
+	content:'';
+	background-image:url(../img/arrow.png);
+	background-position:bottom right;
+	background-repeat:no-repeat;
+	display:block;
+	width:6px;
+	height:6px;
+	float: right;
+	margin-top: 20px;
+	margin-right: -5px;
+}
 ul.h_menu li.cat:after
 {
 	content:'';
@@ -860,6 +873,8 @@ ul.f_menu
 	text-align:left;
 	padding-left:1%;
 }
+#div1 {
+}
 .zeroMargin_mobile {
 margin-left: 0;
 }
@@ -1014,6 +1029,8 @@ ul.f_menu
 	display:none;
 	line-height:40px;
 }
+#div1 {
+}
 .zeroMargin_tablet {
 margin-left: 0;
 }
@@ -1142,10 +1159,12 @@ ul.f_menu
 {
 	text-align:left;
 }
+#div1 {
+}
 .zeroMargin_desktop {
-margin-left: 0;
+	margin-left: 0;
 }
 .hide_desktop {
-  display: none;
+display: none;
 }
 }
