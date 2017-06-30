@@ -1,0 +1,20 @@
+@import "../../../assets/themes/default/variables";
+
+.form-fields-wrapper{
+  width: 20%;
+  display: table-cell;
+  background-color: $scnd-clr;
+  color: $font-pr-clr;
+  .title{
+    margin: 30px 0;
+    color: $font-pr-clr;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  .fields-list{
+    padding: 15px;
+    list-style: none;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,7 @@
+@mixin btn-color-mixin($clr, $text-clr) {
+  background-color: $clr;
+  color: $text-clr;
+  &:hover{
+    background-color: lighten($clr, 20%);
+  }
+}

@@ -1,0 +1,93 @@
+@import "../../../assets/themes/default/variables";
+@import "../../../assets/themes/default/fonts";
+
+.field-wrapper{
+  margin: 10px 0;
+  &.opened{
+    .field-type{
+      background-color: lighten( $third-clr, 10%);
+    }
+    .field-properties{
+      display: block;
+    }
+  }
+  .field {
+    border-bottom: 1px dashed lighten( $third-clr, 10%);
+    padding: 15px 0;
+    &.invalid{
+      input,select{
+        color: $font-pr-clr;
+        border: 1px solid $brdr-err;
+        background-color: $validation-error;
+      }
+    }
+    .error{
+      color: $btn-err;
+      font-size: $font-14px;
+      font-weight: 200;
+      margin: 5px 0;
+    }
+  }
+  .field-type{
+    width: 100%;
+    color: $font-pr-clr;
+    border: none;
+    text-align: center;
+    font-weight: 200;
+    text-transform: uppercase;
+    background-color: $third-clr;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    &:hover{
+      background-color: lighten( $third-clr, 10%);
+    }
+  }
+  .label{
+    margin: 5px 0;
+    font-weight: 200;
+  }
+  .add-btn{
+    width: 100%;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .radio-btn-wrapper{
+    display: inline-block;
+    width: 50%;
+    margin: 10px 0;
+    font-weight: 200;
+  }
+  .field-properties{
+    padding-top:10px;
+    display: none;
+  }
+  .option-wrapper{
+    width: 100%;
+    margin: 10px 0;
+    .select-wrapper{
+      width: 63%;
+      display: inline-block;
+      padding-right: 2%;
+    }
+    .btn{
+      width: 35%;
+      display: inline-block;
+      margin: 0;
+      min-width: 40px;
+      padding:0;
+      top:-2px;
+    }
+  }
+  .radio-wrapper{
+    .field{
+      width: 35%;
+      display: inline-block;
+      border: none;
+      padding: 10px 1% 10px 0;
+    }
+  }
+}
